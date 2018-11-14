@@ -4,9 +4,9 @@
 def removeOddNumbersV1(l):
     for i in range(len(l)):
         # Step 1: use print statement to debug
-        print "index: %d, list: %s" % (i, str(l))
+        # print "index: %d, list: %s" % (i, str(l))
         if l[i] % 2 != 0:
-            print "removing element %d" % l[i]
+            # print "removing element %d" % l[i]
             del l[i]
     return l
 
@@ -21,13 +21,14 @@ def removeOddNumbersV3(l):
 
 def main():
     numbers_l = [1, 2, 3, 4, 5, 6]
-    # removeOddNumbersV1(numbers_l)
+    print "Original list: %s" % str(numbers_l)
+    # even_l = removeOddNumbersV1(numbers_l)
+    even_l = removeOddNumbersV2(numbers_l)
     # removeOddNumbersV2(numbers_l)
+    print "List with only even numbers: %s" % str(even_l)
 
     # Add-hoc test
-    print "Original list: %s" % str(numbers_l)
-    even_l = removeOddNumbersV3(numbers_l)
-    print "List with only even numbers: %s" % str(even_l)
+    # even_l = removeOddNumbersV3(numbers_l)
 
 
 

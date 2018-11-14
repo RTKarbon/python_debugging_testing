@@ -1,0 +1,6 @@
+# One add-hoc test which works
+./program_with_bugs.py
+
+- Unit Testing
+change list [1] to just 1 and see and error
+
