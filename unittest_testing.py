@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-from program_with_bugs import *
+from removeOddNumbers import *
 import unittest
 
 ###############################################
 # Change name of a tested function
-tested_function = removeOddNumbersV3
+tested_function = removeOddNumbersV1
 ###############################################
 
 class RemoveOddNumberTC(unittest.TestCase):
